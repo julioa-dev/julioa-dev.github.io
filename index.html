@@ -710,7 +710,7 @@
 
 			<div class="row block-9">
 				<div class="col-md-8">
-					<form  id="form" class="bg-light p-4 p-md-5 contact-form">
+					<form  action="https://usebasin.com/f/0cdb45f4f472" method="POST" enctype="multipart/form-data" id="form" class="bg-light p-4 p-md-5 contact-form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -854,32 +854,11 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.animateNumber.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
 		<script src="js/google-map.js"></script>
 		
 		<script src="js/main.js"></script>
 		
-		<script>
-			var form = document.getElementById("form");
-		   
-			form.onsubmit = function(event) {
-			 event.preventDefault();
-		   
-			 var formData = new FormData(form);
-		   
-			 var xhr = new XMLHttpRequest();
-			 xhr.open("POST", form.action, true);
-			 xhr.send(formData);
-			 xhr.onload = function(e) {
-			  var response = JSON.parse(xhr.response);
-			  if (xhr.status === 200) {
-			   console.log("success");
-			  } else {
-			   console.log("fail");
-			  }
-			 };
-			};
-		   </script>
 		   
 
 	</body>
